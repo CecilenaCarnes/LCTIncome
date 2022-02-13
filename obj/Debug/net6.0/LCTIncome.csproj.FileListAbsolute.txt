@@ -1,0 +1,14 @@
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\bin\Debug\net6.0\LCTIncome.exe
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\bin\Debug\net6.0\LCTIncome.deps.json
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\bin\Debug\net6.0\LCTIncome.runtimeconfig.json
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\bin\Debug\net6.0\LCTIncome.dll
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\bin\Debug\net6.0\ref\LCTIncome.dll
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\bin\Debug\net6.0\LCTIncome.pdb
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.AssemblyInfoInputs.cache
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.AssemblyInfo.cs
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.csproj.CoreCompileInputs.cache
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.dll
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\ref\LCTIncome.dll
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.pdb
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Debug\net6.0\LCTIncome.genruntimeconfig.cache
