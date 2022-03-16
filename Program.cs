@@ -1,27 +1,30 @@
 ﻿using System;
 
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Luke Carnes Trucking, LLC" );
-//can I calculate the date to put in the write line//
-DateTime date = DateTime.Now;
-Console.WriteLine(date.ToString("D"));
 
-//enter employees - one owner O - others are employees E
-//distinguish between two//
-//owner gets different calculations than employees//
-//Class would be People
-//Object would be owner and employees
+namespace NameInput
+{
+    class Program
+
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine("Luke Carnes Trucking, LLC");
+
+            DateTime date = DateTime.Now;
+            Console.WriteLine(date.ToString("D"));
 
 
-//class People
-//{
-  //  string name1 = "Luke";
-    //string name2 = "David";
-   //private static void Main(string[] args)
-    //{
-    //    People myObj1 = new People();
-      //  People myObj2 = new People();
-        //Console.WriteLine(myObj1.name1);
-       // Console.WriteLine(myObj2.name2);
-    //}
-    //}
+            Console.WriteLine("Enter Name:");
+
+            string userName = Console.ReadLine();
+
+
+            Console.WriteLine("Username is: {0}!", userName);
+
+            Console.WriteLine("Press any key to quit.");
+            Console.ReadKey();
+        }
+    }
+
+}

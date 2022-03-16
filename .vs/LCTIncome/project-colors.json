@@ -5,7 +5,12 @@
       "ProjectGuid": "6e86392f-b445-4513-b2f9-c9b638f311f7",
       "DisplayName": "LCTIncome",
       "ColorIndex": 0
+    },
+    "9ee3e386-b960-470f-bac5-d63db6227b55": {
+      "ProjectGuid": "9ee3e386-b960-470f-bac5-d63db6227b55",
+      "DisplayName": "Person",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
