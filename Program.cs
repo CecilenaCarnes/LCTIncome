@@ -46,14 +46,19 @@ namespace LCTIncome
 
                 income = new double[totalIncome];
                 double payroll = totalIncome * .20;
+                double truckPmt = 220.30;
                 double fuel = totalIncome * .30;
                 double expenses = totalIncome * .10;
+                double selfEmploymentTax = totalIncome * .30;
+                double profit = totalIncome - (payroll + truckPmt + fuel + expenses + selfEmploymentTax);
 
                 Console.WriteLine("Total Income PayPeriod $"+(double)totalIncome);
-                Console.WriteLine("This payperiod payroll is " + (payroll));
-                Console.WriteLine("Fuel expense for payperiod is " + (fuel));
-                Console.WriteLine("Expense account for payperiod is " + (expenses));
-             
+                Console.WriteLine("Payroll:                   " + (payroll));
+                Console.WriteLine("Truck Payment:             " + (truckPmt));
+                Console.WriteLine("Fuel:                      " + (fuel));
+                Console.WriteLine("Expense Allocation:        " + (expenses));
+                Console.WriteLine("Self Employment Taxes:     " + (selfEmploymentTax));
+                Console.WriteLine("Income:                    " + (profit));
 
 
 
