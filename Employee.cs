@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LCTIncome
 {
-    internal class Employee
+    public class Employee
     {
         public string Name;
         public string Dependents;
