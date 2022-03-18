@@ -24,9 +24,9 @@ namespace LCTIncome
             lstEmployees[0].Name = "Lucas Carnes";
             lstEmployees[0].Dependents = "0";
 
-           /* lstEmployees.Add(new Employee());
+            lstEmployees.Add(new Employee());
             lstEmployees[1].Name = "John Davidson";
-            lstEmployees[1].Dependents = "2";*/
+            lstEmployees[1].Dependents = "2";
 
             foreach (Employee emp in lstEmployees)  
             {
@@ -58,7 +58,7 @@ namespace LCTIncome
                 Console.WriteLine("Fuel:                      " + (fuel));
                 Console.WriteLine("Expense Allocation:        " + (expenses));
                 Console.WriteLine("Self Employment Taxes:     " + (selfEmploymentTax));
-                Console.WriteLine("Income:                    " + (profit));
+                Console.WriteLine("Profit:                    " + (profit));
 
 
 
