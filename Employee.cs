@@ -10,10 +10,11 @@ namespace LCTIncome
     {
         public string Name;
         public string Dependents;
+        public string Title;
 
         public string getData()
         {
-            return this.Name + " has " + this.Dependents + " dependents";
+            return this.Name +", "+ this.Title + " has " + this.Dependents + " dependents";
         }
     }
 }

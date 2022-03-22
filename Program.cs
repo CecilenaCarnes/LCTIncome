@@ -23,10 +23,12 @@ namespace LCTIncome
             lstEmployees.Add(new Employee());
             lstEmployees[0].Name = "Lucas Carnes";
             lstEmployees[0].Dependents = "0";
+            lstEmployees[0].Title = "Owner";
 
             lstEmployees.Add(new Employee());
             lstEmployees[1].Name = "John Davidson";
             lstEmployees[1].Dependents = "2";
+            lstEmployees[1].Title = "Employee";
 
             foreach (Employee emp in lstEmployees)  
             {
@@ -36,7 +38,7 @@ namespace LCTIncome
             
  
 
-                int totalIncome = 0;
+                double totalIncome = 0;
                 double[] income;
 
                
@@ -44,7 +46,7 @@ namespace LCTIncome
                 Console.WriteLine("Enter total income ");
                 totalIncome = Convert.ToInt32(Console.ReadLine());
 
-                income = new double[totalIncome];
+                //double income = totalIncome;--I don't know when this was added but it doesn't like it.
                 double payroll = totalIncome * .20;
                 double truckPmt = 220.30;
                 double fuel = totalIncome * .30;
