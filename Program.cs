@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 
 namespace LCTIncome
@@ -17,6 +18,8 @@ namespace LCTIncome
 
             DateTime date = DateTime.Now;
             Console.WriteLine(date.ToString("D"));
+
+            Console.WriteLine("******************************");
 
             //This goes with the Employee.cs which is defining the class Employee
             List<Employee> lstEmployees = new List<Employee>();
@@ -33,17 +36,22 @@ namespace LCTIncome
             foreach (Employee emp in lstEmployees)  
             {
                 Console.WriteLine(emp.getData());
+               
             }
+
+            Console.WriteLine("******************************");
+            Console.WriteLine("Press Enter to Continue");
+
             Console.ReadLine();
+
             
- 
 
                 double totalIncome = 0;
                 double[] income;
 
                
 
-                Console.WriteLine("Enter total income ");
+                Console.WriteLine("Enter total income - whole numbers only - no decimals ");
                 totalIncome = Convert.ToInt32(Console.ReadLine());
 
                 //double income = totalIncome;--I don't know when this was added but it doesn't like it.
@@ -52,9 +60,11 @@ namespace LCTIncome
                 double fuel = totalIncome * .30;
                 double expenses = totalIncome * .10;
                 double selfEmploymentTax = totalIncome * .30;
-                double profit = totalIncome - (payroll + truckPmt + fuel + expenses + selfEmploymentTax);
-
-                Console.WriteLine("Total Income PayPeriod $"+(double)totalIncome);
+                double profit = Math.Floor (totalIncome - (payroll + truckPmt + fuel + expenses + selfEmploymentTax));
+                
+                Console.WriteLine();
+            Console.WriteLine("Total Income PayPeriod $" + ((double)totalIncome));
+                Console.WriteLine();
                 Console.WriteLine("Payroll:                   " + (payroll));
                 Console.WriteLine("Truck Payment:             " + (truckPmt));
                 Console.WriteLine("Fuel:                      " + (fuel));
@@ -62,26 +72,6 @@ namespace LCTIncome
                 Console.WriteLine("Self Employment Taxes:     " + (selfEmploymentTax));
                 Console.WriteLine("Profit:                    " + (profit));
 
-
-
-
-
-
- 
-
-
-
-
-
-            /*Console.WriteLine("Enter Name:");
-
-            string userName = Console.ReadLine();
-
-
-            Console.WriteLine("Username is: {0}!", userName);
-
-            Console.WriteLine("Press any key to quit.");
-            Console.ReadKey();*/
 
         }
     }

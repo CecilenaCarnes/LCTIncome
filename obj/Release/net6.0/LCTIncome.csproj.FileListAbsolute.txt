@@ -12,3 +12,4 @@ C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Release\net6.0\LCTI
 C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Release\net6.0\ref\LCTIncome.dll
 C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Release\net6.0\LCTIncome.pdb
 C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Release\net6.0\LCTIncome.genruntimeconfig.cache
+C:\Users\cecil\Documents\Projects\Console Apps\LCTIncome\obj\Release\net6.0\LCTIncome.csproj.AssemblyReference.cache

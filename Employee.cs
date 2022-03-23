@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace LCTIncome
 {
-    public class Employee
+    public class Employee : Payroll
     {
         public string Name;
-        public string Dependents;
-        public string Title;
+       
+       
 
         public string getData()
         {
