@@ -4,7 +4,7 @@ LCTIncome
 	
 	Instructions to Run
 		Built in VS 2022 
-		Requires any key entry to return after the console returns employee list.  Instructions say use enter key.
+		You will need to press enter to move through the header, date and person information.
 		You are prompted to enter the Total Income.  This is expecting a whole number with no $ or decimal.
  
 	
@@ -17,14 +17,14 @@ LCTIncome
 			These are displayed on the screen before you input the Gross Income Amount
 
 		Create and call 3 functions or methods. 1 must return a value that is used in the application.
-			In Class.cs getData() function. - Retrieves to write the Employee and Payroll data.
-			In Program.cs ToString() method is used in returning the date.
-			In Program.cs Console.ReadLine() and Console.WriteLine() used throughout.
-			In Program.cs Convert.ToInt32(Console.Readline()) 
+			In Class.cs getData() function. - Called in Program.cs to write the Employee and Payroll data.
+			In Program.cs Header() method is used for displaying company information.
+			In Program.cs Date() method is used for displaying date when needed.
+			In Program.cs Line() method is used to separate information.
 
 
 		Choose 3 from Feature List.
-			Master Loop - Enter to move forward. Enter Income value for calculation.  
+			Master Loop - Enter to move forward. Enter Income value for calculation then you are ask to enter another.  Yes to do another or any other key to exit. 
 			Additional Class which inherits from other.  Payroll contains title and dependents but I am calling it from Employee.
 			List - Displays the List of Employees, Title and number of Dependants.
 			Calculate and Display Data - External input is user input and various calculations to arrive at payroll, tax, expense.

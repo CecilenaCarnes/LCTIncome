@@ -10,18 +10,20 @@ namespace LCTIncome
 {
     class Program
 
+   
+
     {
         static void Main(string[] args)
         {
+            Header();
+            Console.ReadLine();
 
-            Console.WriteLine("Luke Carnes Trucking, LLC");
+            Date();
+            Console.ReadLine();
 
-            DateTime date = DateTime.Now;
-            Console.WriteLine(date.ToString("D"));
-
-            Console.WriteLine("******************************");
-
-            //This goes with the Employee.cs which is defining the class Employee
+            Line();
+            
+           //This goes with the Employee.cs which is defining the class Employee
             List<Employee> lstEmployees = new List<Employee>();
             lstEmployees.Add(new Employee());
             lstEmployees[0].Name = "Lucas Carnes";
@@ -36,34 +38,29 @@ namespace LCTIncome
             foreach (Employee emp in lstEmployees)  
             {
                 Console.WriteLine(emp.getData());
-               
             }
 
-            Console.WriteLine("******************************");
-            Console.WriteLine("Press Enter to Continue");
-
+            Line();
             Console.ReadLine();
-
-            
 
                 double totalIncome = 0;
                 double[] income;
+                string answer = "";
 
-               
-
+            do
+            {
                 Console.WriteLine("Enter total income - whole numbers only - no decimals ");
                 totalIncome = Convert.ToInt32(Console.ReadLine());
-
                 //double income = totalIncome;--I don't know when this was added but it doesn't like it.
                 double payroll = totalIncome * .20;
                 double truckPmt = 220.30;
                 double fuel = totalIncome * .30;
                 double expenses = totalIncome * .10;
                 double selfEmploymentTax = totalIncome * .30;
-                double profit = Math.Floor (totalIncome - (payroll + truckPmt + fuel + expenses + selfEmploymentTax));
-                
+                double profit = Math.Floor(totalIncome - (payroll + truckPmt + fuel + expenses + selfEmploymentTax));
+
                 Console.WriteLine();
-            Console.WriteLine("Total Income PayPeriod $" + ((double)totalIncome));
+                Console.WriteLine("Total Income PayPeriod $" + ((double)totalIncome));
                 Console.WriteLine();
                 Console.WriteLine("Payroll:                   " + (payroll));
                 Console.WriteLine("Truck Payment:             " + (truckPmt));
@@ -72,7 +69,27 @@ namespace LCTIncome
                 Console.WriteLine("Self Employment Taxes:     " + (selfEmploymentTax));
                 Console.WriteLine("Profit:                    " + (profit));
 
+                Console.WriteLine("Would you like to enter another income amount?  Yes or No");
+                answer = Console.ReadLine();
+            } while (answer == "Yes"); 
 
+        }
+
+        public static void Header()
+        {
+            Console.WriteLine("Luke Carnes Trucking, LLC | Barbourville, KY | 606.546.8606 | lukecarnestrucking@gmail.com");
+
+        }
+
+        public static void Date()
+        {
+           DateTime date = DateTime.Now;
+           Console.WriteLine(date.ToString("D"));
+        }
+
+        public static void Line()
+        {
+            Console.WriteLine("******************************");
         }
     }
 
